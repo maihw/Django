@@ -18,6 +18,6 @@ from django.urls import path
 from myApp import views  #引入视图函数
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.index, name='index'), #新增路由映射
+     #path('admin/', admin.site.urls),
+    path('', views.detail, name='detail'), #新增路由映射
 ]
