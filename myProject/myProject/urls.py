@@ -17,7 +17,10 @@ from django.contrib import admin
 from django.urls import path
 from myApp import views  #引入视图函数
 
+app_name = 'myApp'
 urlpatterns = [
      #path('admin/', admin.site.urls),
     path('', views.detail, name='detail'), #新增路由映射
+    path('addBook/', views.addBook, name='addBook'),
 ]
+    
